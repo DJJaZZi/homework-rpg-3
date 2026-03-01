@@ -16,10 +16,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== RPG Battle Engine Demo ===\n");
 
-        // TODO: Create heroes and enemies
         Warrior warrior = new Warrior("Arthas");
         Mage mage = new Mage("Jaina");
-        Goblin goblin = new Goblin();
+        Goblin goblin1 = new Goblin();
+        Goblin goblin2 = new Goblin();
+
 
         // TODO: Wrap with adapters
         List<Combatant> heroes = new ArrayList<>();

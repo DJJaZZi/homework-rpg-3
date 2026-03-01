@@ -28,7 +28,6 @@ public final class BattleEngine {
     }
 
     public EncounterResult runEncounter(List<Combatant> teamA, List<Combatant> teamB) {
-        // TODO: validate inputs and run round-based battle
         EncounterResult result = new EncounterResult();
         int rounds = 0;
         List<Combatant> activeTeamA = new ArrayList<>(teamA);
