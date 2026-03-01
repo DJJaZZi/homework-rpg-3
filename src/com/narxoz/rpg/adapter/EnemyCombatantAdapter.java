@@ -27,7 +27,6 @@ public class EnemyCombatantAdapter implements Combatant {
 
     @Override
     public boolean isAlive() {
-        // Since enemy has 'isDefeated', we return the opposite for 'isAlive'
         return !enemy.isDefeated();
     }
 }
