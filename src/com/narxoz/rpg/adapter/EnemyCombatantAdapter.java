@@ -17,7 +17,6 @@ public class EnemyCombatantAdapter implements Combatant {
 
     @Override
     public int getAttackPower() {
-        // TODO: translate enemy damage to combat attack
         return enemy.getDamage();
     }
 
@@ -28,6 +27,7 @@ public class EnemyCombatantAdapter implements Combatant {
 
     @Override
     public boolean isAlive() {
+        // Since enemy has 'isDefeated', we return the opposite for 'isAlive'
         return !enemy.isDefeated();
     }
 }
