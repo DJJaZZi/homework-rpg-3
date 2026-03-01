@@ -23,10 +23,9 @@ public class BasicEnemy implements Enemy {
 
     @Override
     public void applyDamage(int amount) {
-        // TODO: enforce min 0
-        health -= amount;
-        if (health < 0) {
-            health = 0;
+        this.health -= amount;
+        if (this.health < 0) {
+            this.health = 0;
         }
     }
 
