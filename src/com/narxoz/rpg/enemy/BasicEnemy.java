@@ -1,9 +1,9 @@
 package com.narxoz.rpg.enemy;
 
 public class BasicEnemy implements Enemy {
-    private final String title;
-    private final int damage;
-    private int health;
+    protected final String title;
+    protected final int damage;
+    protected int health;
 
     public BasicEnemy(String title, int damage, int health) {
         this.title = title;

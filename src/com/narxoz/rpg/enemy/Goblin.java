@@ -4,4 +4,9 @@ public class Goblin extends BasicEnemy {
     public Goblin() {
         super("Goblin", 12, 60);
     }
+
+    @Override
+    public int getHealth(){
+        return health;
+    }
 }
